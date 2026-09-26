@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>TGM-WORLDWIDE — Brand Film</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      :root {
+        --navy: #0b1b33;
+        --navy-2: #13294d;
+        --gold: #d4a64a;
+        --white: #f5f7fb;
+        --muted: #9fb0cc;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--navy); }
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        color: var(--white);
+        background: radial-gradient(circle at 30% 20%, var(--navy-2), var(--navy) 70%);
+      }
+      .clip {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      /* Intro */
+      .brand {
+        font-size: 150px;
+        font-weight: 800;
+        letter-spacing: 6px;
+        margin: 0;
+      }
+      .brand span { color: var(--gold); }
+      .rule {
+        width: 0;
+        height: 6px;
+        background: var(--gold);
+        margin: 28px 0;
+      }
+      .tagline {
+        font-size: 48px;
+        color: var(--muted);
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      /* Divisions */
+      .division .index {
+        font-size: 36px;
+        color: var(--gold);
+        letter-spacing: 8px;
+        margin: 0 0 20px;
+      }
+      .division .icon {
+        font-size: 170px;
+        line-height: 1;
+        margin-bottom: 24px;
+      }
+      .division h2 {
+        font-size: 110px;
+        font-weight: 800;
+        margin: 0 0 20px;
+      }
+      .division p {
+        font-size: 44px;
+        color: var(--muted);
+        margin: 0;
+        max-width: 1400px;
+      }
+
+      /* Vision */
+      .timeline-row {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+        font-size: 120px;
+        font-weight: 800;
+      }
+      .timeline-row .arrow { color: var(--gold); }
+      .vision-copy {
+        font-size: 56px;
+        margin: 40px 0 0;
+      }
+      .pillars {
+        display: flex;
+        gap: 28px;
+        margin-top: 56px;
+      }
+      .pillars div {
+        border: 3px solid var(--gold);
+        border-radius: 14px;
+        padding: 18px 30px;
+        font-size: 32px;
+        letter-spacing: 2px;
+      }
+
+      /* Outro */
+      .outro .brand { font-size: 120px; }
+      .cta {
+        font-size: 50px;
+        color: var(--gold);
+        margin: 30px 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="24"
+      data-width="1920"
+      data-height="1080"
+    >
+      <!-- Scene 1: Intro (0–4s) -->
+      <section id="intro" class="clip" data-start="0" data-duration="4" data-track-index="1">
+        <h1 class="brand" id="intro-brand">TGM<span>-</span>WORLDWIDE</h1>
+        <div class="rule" id="intro-rule"></div>
+        <p class="tagline" id="intro-tagline">One Group · Five Industries · Worldwide</p>
+      </section>
+
+      <!-- Scenes 2–6: Divisions (4–16.5s, 2.5s each) -->
+      <section id="d1" class="clip division" data-start="4" data-duration="2.5" data-track-index="1">
+        <p class="index">DIVISION 01</p>
+        <div class="icon">🩺</div>
+        <h2>Medical Courier</h2>
+        <p>Fast, secure, compliant delivery of specimens, supplies &amp; records.</p>
+      </section>
+      <section id="d2" class="clip division" data-start="6.5" data-duration="2.5" data-track-index="1">
+        <p class="index">DIVISION 02</p>
+        <div class="icon">🚚</div>
+        <h2>Truck Transportation</h2>
+        <p>Reliable freight hauling that keeps business moving.</p>
+      </section>
+      <section id="d3" class="clip division" data-start="9" data-duration="2.5" data-track-index="1">
+        <p class="index">DIVISION 03</p>
+        <div class="icon">🏢</div>
+        <h2>Commercial Cleaning</h2>
+        <p>Spotless offices and buildings, on schedule, every time.</p>
+      </section>
+      <section id="d4" class="clip division" data-start="11.5" data-duration="2.5" data-track-index="1">
+        <p class="index">DIVISION 04</p>
+        <div class="icon">🏠</div>
+        <h2>Real Estate</h2>
+        <p>Acquiring and managing properties that build lasting value.</p>
+      </section>
+      <section id="d5" class="clip division" data-start="14" data-duration="2.5" data-track-index="1">
+        <p class="index">DIVISION 05</p>
+        <div class="icon">🌍</div>
+        <h2>Import &amp; Export</h2>
+        <p>Connecting products and partners across borders.</p>
+      </section>
+
+      <!-- Scene 7: Vision (16.5–20.5s) -->
+      <section id="vision" class="clip" data-start="16.5" data-duration="4" data-track-index="1">
+        <div class="timeline-row" id="vision-years">
+          <span>2026</span><span class="arrow">→</span><span>2031</span>
+        </div>
+        <p class="vision-copy" id="vision-copy">Building a multi-million-dollar group — one division at a time.</p>
+        <div class="pillars" id="vision-pillars">
+          <div>RELIABILITY</div>
+          <div>INTEGRITY</div>
+          <div>GROWTH</div>
+        </div>
+      </section>
+
+      <!-- Scene 8: Outro (20.5–24s) -->
+      <section id="outro" class="clip outro" data-start="20.5" data-duration="3.5" data-track-index="1">
+        <h1 class="brand" id="outro-brand">TGM<span>-</span>WORLDWIDE</h1>
+        <p class="cta" id="outro-cta">Moving Health · Freight · Property · Trade</p>
+      </section>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      // Intro
+      tl.fromTo("#intro-brand", { y: 60, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 0.2)
+        .fromTo("#intro-rule", { width: 0 }, { width: 520, duration: 0.7, ease: "power2.inOut" }, 0.8)
+        .fromTo("#intro-tagline", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 1.3)
+        .to("#intro", { opacity: 0, duration: 0.4 }, 3.6);
+
+      // Divisions: same entrance/exit pattern for each 2.5s scene
+      ["#d1", "#d2", "#d3", "#d4", "#d5"].forEach((id, i) => {
+        const t = 4 + i * 2.5;
+        tl.fromTo(`${id} .index`, { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, t + 0.05)
+          .fromTo(`${id} .icon`, { scale: 0.4, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.8)" }, t + 0.1)
+          .fromTo(`${id} h2`, { x: -80, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, t + 0.25)
+          .fromTo(`${id} p:last-child`, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, t + 0.45)
+          .to(id, { opacity: 0, x: 80, duration: 0.3, ease: "power2.in" }, t + 2.2);
+      });
+
+      // Vision
+      tl.fromTo("#vision-years span", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.5, stagger: 0.2, ease: "power3.out" }, 16.6)
+        .fromTo("#vision-copy", { opacity: 0 }, { opacity: 1, duration: 0.6 }, 17.4)
+        .fromTo("#vision-pillars div", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, stagger: 0.15, ease: "power2.out" }, 18)
+        .to("#vision", { opacity: 0, duration: 0.4 }, 20.1);
+
+      // Outro
+      tl.fromTo("#outro-brand", { scale: 0.85, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.8, ease: "power3.out" }, 20.6)
+        .fromTo("#outro-cta", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 21.3);
+
+      window.__timelines.main = tl;
+    </script>
+  </body>
+</html>
