@@ -1,16 +1,17 @@
 // ─────────────────────────────────────────────────────────────
-// TGM-WORLDWIDE — contact details shown at the end of the video.
-// Edit these three lines, then re-render both versions.
-// The values below are PLACEHOLDERS, not real contact details.
+// TGM-WORLDWIDE — business contact details shown at the end of the video.
+// Edit here, then re-render both versions. Leave a value empty ("") to hide that row.
 // ─────────────────────────────────────────────────────────────
 const CONTACT = {
-  phone: "(555) 000-0000",
-  email: "info@yourcompany.com",
-  website: "www.yourcompany.com",
+  phone: "(859) 446-6897",
+  email: "gadmboukaboukoumou@gmail.com",
+  website: "",
 };
 
 document.querySelectorAll("[data-contact]").forEach((el) => {
-  el.textContent = CONTACT[el.dataset.contact];
+  const value = CONTACT[el.dataset.contact];
+  if (value) el.textContent = value;
+  else el.closest(".row").remove();
 });
 
 // Shared animation timeline (used by both the 16:9 and 9:16 versions).
