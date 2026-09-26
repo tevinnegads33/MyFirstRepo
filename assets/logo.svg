@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <title>TGM-WORLDWIDE</title>
+  <defs>
+    <radialGradient id="bg" cx="38%" cy="32%" r="75%">
+      <stop offset="0" stop-color="#1c3a6b"/>
+      <stop offset="1" stop-color="#0b1b33"/>
+    </radialGradient>
+    <clipPath id="globe"><circle cx="200" cy="200" r="150"/></clipPath>
+  </defs>
+
+  <!-- Badge -->
+  <circle cx="200" cy="200" r="188" fill="url(#bg)" stroke="#d4a64a" stroke-width="10"/>
+
+  <!-- Globe grid -->
+  <g clip-path="url(#globe)" fill="none" stroke="#d4a64a" stroke-opacity="0.35" stroke-width="3">
+    <circle cx="200" cy="200" r="150"/>
+    <ellipse cx="200" cy="200" rx="75" ry="150"/>
+    <ellipse cx="200" cy="200" rx="125" ry="150"/>
+    <line x1="200" y1="50" x2="200" y2="350"/>
+    <line x1="50" y1="200" x2="350" y2="200"/>
+    <ellipse cx="200" cy="200" rx="150" ry="62"/>
+    <ellipse cx="200" cy="200" rx="150" ry="118"/>
+  </g>
+
+  <!-- Orbit swoosh -->
+  <path d="M 42 262 C 110 330, 300 320, 362 190" fill="none" stroke="#d4a64a" stroke-width="9" stroke-linecap="round"/>
+  <path d="M 362 190 l -26 8 l 20 18 z" fill="#d4a64a"/>
+
+  <!-- Monogram -->
+  <text x="200" y="232" text-anchor="middle"
+        font-family="Helvetica Neue, Arial, sans-serif" font-weight="900" font-size="112" letter-spacing="2"
+        fill="#f5f7fb" stroke="#0b1b33" stroke-width="8" paint-order="stroke">TGM</text>
+</svg>
