@@ -15,9 +15,9 @@ Ready-to-post renders are in [`renders/`](renders/).
 
 **Audio:** male AI voiceover for every scene (generated locally with `hyperframes tts`, Kokoro-82M) over a soft ambient music bed.
 
-### ⚠️ Before posting: add your real contact details
+### Contact details
 
-The phone, email and website at the end are **placeholders**. Edit them in one place — the top of [`assets/brand.js`](assets/brand.js) — and re-render. Both versions update.
+The video ends with the business phone **(859) 446-6897** and email **gadmboukaboukoumou@gmail.com**. They're set in one place, the top of [`assets/brand.js`](assets/brand.js); edit there and re-render to update both versions. The website row stays hidden until a website is added.
 
 ### Commands
 
