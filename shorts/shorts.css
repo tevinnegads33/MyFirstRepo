@@ -1,0 +1,127 @@
+/* Layout for the 20-second division shorts (1080×1920). Colors come from ../assets/brand.css. */
+#root {
+  width: 1080px;
+  height: 1920px;
+  --gutter: 80px;
+}
+
+/* Logo lockup: badge + company name + division */
+.lockup .badge { width: 560px; height: 560px; }
+.lockup .name {
+  font-size: 92px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin: 44px 0 0;
+  line-height: 1;
+}
+.lockup .name span { color: var(--gold); }
+.lockup .corp {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 20px;
+  margin: 20px -20px 0 0;
+}
+.lockup .rule {
+  width: 560px;
+  height: 6px;
+  background: var(--gold);
+  margin: 40px 0 34px;
+  transform-origin: center;
+}
+.lockup .division {
+  font-size: 64px;
+  font-weight: 800;
+  letter-spacing: 6px;
+  margin-right: -6px;
+  color: var(--gold);
+  text-transform: uppercase;
+  line-height: 1.15;
+}
+
+/* Small lockup pinned to the top during the middle scenes */
+#chip {
+  position: absolute;
+  top: 90px;
+  bottom: auto;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  z-index: 5;
+  padding: 0;
+}
+#chip img { width: 130px; height: 130px; }
+#chip .t { text-align: left; }
+#chip .t b { display: block; font-size: 40px; letter-spacing: 1px; }
+#chip .t b span { color: var(--gold); }
+#chip .t small { display: block; font-size: 22px; letter-spacing: 9px; margin-top: 6px; }
+#chip .t i {
+  display: block;
+  font-style: normal;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 3px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+/* Middle scenes keep clear of the pinned lockup at the top */
+#b, #c { padding-top: 300px; }
+
+/* Scene B: hook + services */
+.hook-icon { font-size: 220px; line-height: 1; margin-bottom: 40px; }
+.hook {
+  font-size: 96px;
+  font-weight: 800;
+  line-height: 1.08;
+  margin: 0 0 60px;
+  text-wrap: balance;
+}
+.items { display: flex; flex-direction: column; gap: 22px; align-items: center; }
+.items div {
+  font-size: 46px;
+  padding: 16px 40px;
+  border: 3px solid var(--gold);
+  border-radius: 60px;
+}
+
+/* Scene C: benefits */
+.label {
+  font-size: 40px;
+  color: var(--gold);
+  letter-spacing: 10px;
+  margin: 0 -10px 50px 0;
+}
+.benefits { display: flex; flex-direction: column; gap: 32px; width: 100%; }
+.benefits .card {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.06);
+  border-left: 8px solid var(--gold);
+  border-radius: 20px;
+  padding: 40px 44px;
+}
+.benefits .card em { font-style: normal; font-size: 80px; line-height: 1; }
+.benefits .card span { font-size: 52px; font-weight: 700; line-height: 1.2; }
+
+/* Scene D: call to action */
+.cta .badge { width: 380px; height: 380px; }
+.cta .name { font-size: 80px; margin-top: 34px; }
+.cta .corp { font-size: 34px; letter-spacing: 17px; margin-right: -17px; }
+.cta .rule { width: 460px; margin: 30px 0 26px; }
+.cta .division { font-size: 52px; }
+.cta .call {
+  font-size: 44px;
+  letter-spacing: 6px;
+  color: var(--muted);
+  margin: 70px 0 20px;
+}
+.cta .row { display: flex; align-items: center; gap: 18px; justify-content: center; }
+.cta .phone { font-size: 84px; font-weight: 800; }
+.cta .email, .cta .website { font-size: 42px; font-weight: 600; margin-top: 20px; }

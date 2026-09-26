@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=1920, height=1080" />
-    <title>TGM-WORLDWIDE — Brand Film (16:9)</title>
+    <title>TGM-WORLDWIDE CORPORATION — Brand Film (16:9)</title>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
     <link rel="stylesheet" href="assets/brand.css" />
     <style>
@@ -14,6 +14,7 @@
         --logo: 260px;
         --brand: 140px;
         --tagline: 46px;
+        --corp: 40px;
         --bug: 110px;
         --icon: 170px;
         --h2: 110px;
@@ -39,7 +40,7 @@
     >
       <!-- ── Audio ─────────────────────────────────────────── -->
       <audio id="a-music-bed" src="assets/music/music-bed.wav" data-start="0" data-duration="38" data-track-index="10" data-volume="0.6" data-fade-out="2"></audio>
-      <audio id="a-vo-01-intro" src="assets/voice/vo-01-intro.wav" data-duration="4.18" data-start="0.4" data-track-index="11"></audio>
+      <audio id="a-vo-01-intro" src="assets/voice/vo-01-intro.wav" data-duration="4.5" data-start="0.4" data-track-index="11"></audio>
       <audio id="a-vo-02-medical" src="assets/voice/vo-02-medical.wav" data-duration="3.63" data-start="5.2" data-track-index="11"></audio>
       <audio id="a-vo-03-truck" src="assets/voice/vo-03-truck.wav" data-duration="3.43" data-start="9.2" data-track-index="11"></audio>
       <audio id="a-vo-04-cleaning" src="assets/voice/vo-04-cleaning.wav" data-duration="3.39" data-start="13.2" data-track-index="11"></audio>
@@ -50,14 +51,15 @@
 
       <!-- ── Scene 1: Intro (0–5s) ─────────────────────────── -->
       <section id="intro" class="clip" data-start="0" data-duration="5" data-track-index="1">
-        <img id="intro-logo" class="logo" src="assets/logo.svg" alt="TGM-WORLDWIDE logo" />
+        <img id="intro-logo" class="logo" src="assets/logo-mark.png" alt="TGM-WORLDWIDE CORPORATION logo" />
         <h1 class="brand" id="intro-brand">TGM<span>-</span>WORLDWIDE</h1>
+        <p class="corp-line" id="intro-corp">CORPORATION</p>
         <div class="rule" id="intro-rule"></div>
         <p class="tagline" id="intro-tagline">One Group · Five Industries · Worldwide</p>
       </section>
 
       <!-- Corner logo during divisions + vision (5–31s) -->
-      <img id="logo-bug" class="clip" src="assets/logo.svg" alt="" data-start="5" data-duration="26" data-track-index="2" />
+      <img id="logo-bug" class="clip" src="assets/logo-mark.png" alt="" data-start="5" data-duration="26" data-track-index="2" />
 
       <!-- ── Scenes 2–6: Divisions (5–25s, 4s each) ─────────── -->
       <section id="d1" class="clip division" data-start="5" data-duration="4" data-track-index="1">
@@ -106,8 +108,9 @@
 
       <!-- ── Scene 8: Outro + contact (31–38s) ──────────────── -->
       <section id="outro" class="clip outro" data-start="31" data-duration="7" data-track-index="1">
-        <img id="outro-logo" class="logo" src="assets/logo.svg" alt="TGM-WORLDWIDE logo" />
+        <img id="outro-logo" class="logo" src="assets/logo-mark.png" alt="TGM-WORLDWIDE CORPORATION logo" />
         <h1 class="brand" id="outro-brand">TGM<span>-</span>WORLDWIDE</h1>
+        <p class="corp-line" id="outro-corp">CORPORATION</p>
         <p class="services" id="outro-services">Medical Courier · Trucking · Cleaning · Real Estate · Import &amp; Export</p>
         <div id="contact">
           <div class="row"><b>📞</b><span data-contact="phone"></span></div>

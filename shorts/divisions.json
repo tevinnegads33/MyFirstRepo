@@ -1,0 +1,155 @@
+[
+  {
+    "slug": "medical-courier",
+    "name": "Medical Courier",
+    "icon": "🩺",
+    "hook": "Healthcare can't wait.",
+    "items": [
+      "Lab specimens",
+      "Prescriptions",
+      "Medical supplies",
+      "Patient records"
+    ],
+    "benefits": [
+      [
+        "⚡",
+        "Same-day & scheduled runs"
+      ],
+      [
+        "🔒",
+        "Careful, secure handling"
+      ],
+      [
+        "🤝",
+        "Professional, reliable drivers"
+      ]
+    ],
+    "vo": [
+      "T G M Worldwide Corporation. Medical Courier.",
+      "Healthcare can't wait. We deliver lab specimens, prescriptions, supplies and records.",
+      "Same-day and scheduled runs, handled with care by professional drivers."
+    ]
+  },
+  {
+    "slug": "truck-transportation",
+    "name": "Truck Transportation",
+    "icon": "🚚",
+    "hook": "Your freight. On time.",
+    "items": [
+      "Local & regional hauling",
+      "Scheduled loads",
+      "Business deliveries"
+    ],
+    "benefits": [
+      [
+        "📅",
+        "Dependable scheduling"
+      ],
+      [
+        "📦",
+        "Careful cargo handling"
+      ],
+      [
+        "📞",
+        "Clear, direct communication"
+      ]
+    ],
+    "vo": [
+      "T G M Worldwide Corporation. Truck Transportation.",
+      "Your freight, on time. Local and regional hauling, scheduled loads and business deliveries.",
+      "Dependable scheduling, careful handling, and a team that keeps you informed."
+    ]
+  },
+  {
+    "slug": "commercial-cleaning",
+    "name": "Commercial Cleaning",
+    "icon": "🏢",
+    "hook": "A clean building works better.",
+    "items": [
+      "Offices",
+      "Commercial buildings",
+      "Lobbies & common areas",
+      "Restrooms & break rooms"
+    ],
+    "benefits": [
+      [
+        "🕘",
+        "Nightly, weekly or custom schedules"
+      ],
+      [
+        "🧽",
+        "Trained, trustworthy crews"
+      ],
+      [
+        "✅",
+        "Consistent quality checks"
+      ]
+    ],
+    "vo": [
+      "T G M Worldwide Corporation. Commercial Cleaning.",
+      "A clean building works better. We clean offices, commercial buildings and common areas.",
+      "Flexible schedules, trustworthy crews, and consistent quality every visit."
+    ]
+  },
+  {
+    "slug": "real-estate",
+    "name": "Real Estate",
+    "icon": "🏠",
+    "hook": "Property that builds value.",
+    "items": [
+      "Residential properties",
+      "Commercial properties",
+      "Rentals",
+      "Property management"
+    ],
+    "benefits": [
+      [
+        "🔑",
+        "Well-kept, move-in-ready spaces"
+      ],
+      [
+        "🛠️",
+        "Responsive maintenance"
+      ],
+      [
+        "📈",
+        "Long-term value"
+      ]
+    ],
+    "vo": [
+      "T G M Worldwide Corporation. Real Estate.",
+      "Property that builds value. Residential and commercial properties, rentals and management.",
+      "Well-kept spaces, responsive maintenance, and value that lasts."
+    ]
+  },
+  {
+    "slug": "import-export",
+    "name": "Import & Export",
+    "icon": "🌍",
+    "hook": "Your bridge to global trade.",
+    "items": [
+      "Product sourcing",
+      "Shipping coordination",
+      "Cross-border trade"
+    ],
+    "benefits": [
+      [
+        "🔎",
+        "Reliable sourcing"
+      ],
+      [
+        "🚢",
+        "Coordinated shipments"
+      ],
+      [
+        "💬",
+        "Honest, clear communication"
+      ]
+    ],
+    "vo": [
+      "T G M Worldwide Corporation. Import and Export.",
+      "Your bridge to global trade. Product sourcing, shipping coordination, and cross-border trade.",
+      "Reliable sourcing, coordinated shipments, and honest communication."
+    ]
+  }
+]
