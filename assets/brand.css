@@ -1,0 +1,150 @@
+/* Shared TGM-WORLDWIDE styles. Size tokens (--*) are set per format in each HTML file. */
+:root {
+  --navy: #0b1b33;
+  --navy-2: #13294d;
+  --gold: #d4a64a;
+  --white: #f5f7fb;
+  --muted: #9fb0cc;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--navy); }
+#root {
+  position: relative;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: var(--white);
+  background: radial-gradient(circle at 30% 20%, var(--navy-2), var(--navy) 70%);
+}
+.clip {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 var(--gutter);
+}
+
+/* Intro */
+.logo { width: var(--logo); height: var(--logo); }
+.brand {
+  font-size: var(--brand);
+  font-weight: 800;
+  letter-spacing: 4px;
+  margin: 28px 0 0;
+  line-height: 1.05;
+}
+.brand span { color: var(--gold); }
+.rule {
+  width: 520px;
+  max-width: 80%;
+  height: 6px;
+  background: var(--gold);
+  margin: 28px 0;
+  transform-origin: center;
+}
+.tagline {
+  font-size: var(--tagline);
+  color: var(--muted);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Corner logo bug */
+#logo-bug {
+  position: absolute;
+  top: 40px;
+  left: 48px;
+  width: var(--bug);
+  height: var(--bug);
+  z-index: 5;
+  padding: 0;
+}
+
+/* Divisions */
+.division .index {
+  font-size: 36px;
+  color: var(--gold);
+  letter-spacing: 8px;
+  margin: 0 0 20px;
+}
+.division .icon {
+  font-size: var(--icon);
+  line-height: 1;
+  margin-bottom: 24px;
+}
+.division h2 {
+  font-size: var(--h2);
+  font-weight: 800;
+  margin: 0 0 20px;
+  line-height: 1.05;
+}
+.division .pitch {
+  font-size: var(--pitch);
+  color: var(--muted);
+  margin: 0;
+  max-width: 1400px;
+  line-height: 1.35;
+  text-wrap: balance;
+}
+
+/* Vision */
+.timeline-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: var(--years);
+  font-weight: 800;
+}
+.timeline-row .arrow { color: var(--gold); }
+.vision-copy {
+  font-size: var(--vision);
+  margin: 40px 0 0;
+  line-height: 1.35;
+  max-width: 1500px;
+  text-wrap: balance;
+}
+.pillars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 56px;
+}
+.pillars div {
+  border: 3px solid var(--gold);
+  border-radius: 14px;
+  padding: 18px 30px;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+/* Outro + contact */
+.outro .logo { width: var(--outro-logo); height: var(--outro-logo); }
+.outro .brand { font-size: var(--outro-brand); margin-top: 20px; }
+.services {
+  font-size: var(--services);
+  color: var(--gold);
+  margin: 18px 0 40px;
+  line-height: 1.4;
+}
+#contact {
+  display: flex;
+  flex-direction: var(--contact-dir);
+  gap: 22px 56px;
+  align-items: center;
+}
+#contact .row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: var(--contact);
+  font-weight: 600;
+}
+#contact .row b {
+  color: var(--gold);
+  font-weight: 400;
+}

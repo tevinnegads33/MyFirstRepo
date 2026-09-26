@@ -2,29 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=1920, height=1080" />
-    <title>TGM-WORLDWIDE — Brand Film (16:9)</title>
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>TGM-WORLDWIDE — Brand Film (9:16 vertical)</title>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
-    <link rel="stylesheet" href="assets/brand.css" />
+    <link rel="stylesheet" href="../assets/brand.css" />
     <style>
       #root {
-        width: 1920px;
-        height: 1080px;
-        --gutter: 120px;
-        --logo: 260px;
-        --brand: 140px;
-        --tagline: 46px;
-        --bug: 110px;
-        --icon: 170px;
-        --h2: 110px;
-        --pitch: 44px;
+        width: 1080px;
+        height: 1920px;
+        --gutter: 70px;
+        --logo: 300px;
+        --brand: 104px;
+        --tagline: 40px;
+        --bug: 120px;
+        --icon: 200px;
+        --h2: 96px;
+        --pitch: 46px;
         --years: 120px;
         --vision: 56px;
-        --outro-logo: 220px;
-        --outro-brand: 110px;
-        --services: 44px;
-        --contact: 44px;
-        --contact-dir: row;
+        --outro-logo: 280px;
+        --outro-brand: 96px;
+        --services: 40px;
+        --contact: 50px;
+        --contact-dir: column;
       }
     </style>
   </head>
@@ -34,30 +34,30 @@
       data-composition-id="main"
       data-start="0"
       data-duration="38"
-      data-width="1920"
-      data-height="1080"
+      data-width="1080"
+      data-height="1920"
     >
       <!-- ── Audio ─────────────────────────────────────────── -->
-      <audio id="a-music-bed" src="assets/music/music-bed.wav" data-start="0" data-duration="38" data-track-index="10" data-volume="0.6" data-fade-out="2"></audio>
-      <audio id="a-vo-01-intro" src="assets/voice/vo-01-intro.wav" data-duration="4.18" data-start="0.4" data-track-index="11"></audio>
-      <audio id="a-vo-02-medical" src="assets/voice/vo-02-medical.wav" data-duration="3.63" data-start="5.2" data-track-index="11"></audio>
-      <audio id="a-vo-03-truck" src="assets/voice/vo-03-truck.wav" data-duration="3.43" data-start="9.2" data-track-index="11"></audio>
-      <audio id="a-vo-04-cleaning" src="assets/voice/vo-04-cleaning.wav" data-duration="3.39" data-start="13.2" data-track-index="11"></audio>
-      <audio id="a-vo-05-realestate" src="assets/voice/vo-05-realestate.wav" data-duration="3.33" data-start="17.2" data-track-index="11"></audio>
-      <audio id="a-vo-06-trade" src="assets/voice/vo-06-trade.wav" data-duration="3.67" data-start="21.2" data-track-index="11"></audio>
-      <audio id="a-vo-07-vision" src="assets/voice/vo-07-vision.wav" data-duration="5.18" data-start="25.4" data-track-index="11"></audio>
-      <audio id="a-vo-08-outro" src="assets/voice/vo-08-outro.wav" data-duration="2.54" data-start="31.6" data-track-index="11"></audio>
+      <audio id="a-music-bed" src="../assets/music/music-bed.wav" data-start="0" data-duration="38" data-track-index="10" data-volume="0.6" data-fade-out="2"></audio>
+      <audio id="a-vo-01-intro" src="../assets/voice/vo-01-intro.wav" data-duration="4.18" data-start="0.4" data-track-index="11"></audio>
+      <audio id="a-vo-02-medical" src="../assets/voice/vo-02-medical.wav" data-duration="3.63" data-start="5.2" data-track-index="11"></audio>
+      <audio id="a-vo-03-truck" src="../assets/voice/vo-03-truck.wav" data-duration="3.43" data-start="9.2" data-track-index="11"></audio>
+      <audio id="a-vo-04-cleaning" src="../assets/voice/vo-04-cleaning.wav" data-duration="3.39" data-start="13.2" data-track-index="11"></audio>
+      <audio id="a-vo-05-realestate" src="../assets/voice/vo-05-realestate.wav" data-duration="3.33" data-start="17.2" data-track-index="11"></audio>
+      <audio id="a-vo-06-trade" src="../assets/voice/vo-06-trade.wav" data-duration="3.67" data-start="21.2" data-track-index="11"></audio>
+      <audio id="a-vo-07-vision" src="../assets/voice/vo-07-vision.wav" data-duration="5.18" data-start="25.4" data-track-index="11"></audio>
+      <audio id="a-vo-08-outro" src="../assets/voice/vo-08-outro.wav" data-duration="2.54" data-start="31.6" data-track-index="11"></audio>
 
       <!-- ── Scene 1: Intro (0–5s) ─────────────────────────── -->
       <section id="intro" class="clip" data-start="0" data-duration="5" data-track-index="1">
-        <img id="intro-logo" class="logo" src="assets/logo.svg" alt="TGM-WORLDWIDE logo" />
-        <h1 class="brand" id="intro-brand">TGM<span>-</span>WORLDWIDE</h1>
+        <img id="intro-logo" class="logo" src="../assets/logo.svg" alt="TGM-WORLDWIDE logo" />
+        <h1 class="brand" id="intro-brand">TGM<span>-</span><br />WORLDWIDE</h1>
         <div class="rule" id="intro-rule"></div>
-        <p class="tagline" id="intro-tagline">One Group · Five Industries · Worldwide</p>
+        <p class="tagline" id="intro-tagline">One Group<br />Five Industries<br />Worldwide</p>
       </section>
 
       <!-- Corner logo during divisions + vision (5–31s) -->
-      <img id="logo-bug" class="clip" src="assets/logo.svg" alt="" data-start="5" data-duration="26" data-track-index="2" />
+      <img id="logo-bug" class="clip" src="../assets/logo.svg" alt="" data-start="5" data-duration="26" data-track-index="2" />
 
       <!-- ── Scenes 2–6: Divisions (5–25s, 4s each) ─────────── -->
       <section id="d1" class="clip division" data-start="5" data-duration="4" data-track-index="1">
@@ -106,9 +106,9 @@
 
       <!-- ── Scene 8: Outro + contact (31–38s) ──────────────── -->
       <section id="outro" class="clip outro" data-start="31" data-duration="7" data-track-index="1">
-        <img id="outro-logo" class="logo" src="assets/logo.svg" alt="TGM-WORLDWIDE logo" />
-        <h1 class="brand" id="outro-brand">TGM<span>-</span>WORLDWIDE</h1>
-        <p class="services" id="outro-services">Medical Courier · Trucking · Cleaning · Real Estate · Import &amp; Export</p>
+        <img id="outro-logo" class="logo" src="../assets/logo.svg" alt="TGM-WORLDWIDE logo" />
+        <h1 class="brand" id="outro-brand">TGM<span>-</span><br />WORLDWIDE</h1>
+        <p class="services" id="outro-services">Medical Courier · Trucking · Cleaning<br />Real Estate · Import &amp; Export</p>
         <div id="contact">
           <div class="row"><b>📞</b><span data-contact="phone"></span></div>
           <div class="row"><b>✉️</b><span data-contact="email"></span></div>
@@ -117,7 +117,7 @@
       </section>
     </div>
 
-    <script src="assets/brand.js"></script>
+    <script src="../assets/brand.js"></script>
     <script>
       window.__timelines = window.__timelines || {};
       window.__timelines.main = buildTimeline();
